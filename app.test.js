@@ -26,7 +26,7 @@ describe('reverse String', () => {
 // Calculator functions testing
 describe('Calculator functions', () => {
     test('The result of the "Add" function should be 15', () => {
-        expect(new Calculator(12,3).divide()).toBe(4);
+        expect(new Calculator(12,3).add()).toBe(15);
     });
 
     test('The result of the "Subract" function should be 9', () => {
