@@ -35,5 +35,21 @@ class Calculator {
     }
 }
 
-module.exports = {stringLength, reverseString, Calculator };
+// Capitalize function
+    const capitalize = (string) => {
+        const newArray = string.split('');
+
+        const newCharArray = newArray.map((char, i) => {
+        if (i === 0) {
+            return char.toUpperCase();
+        }
+        return char;
+        });
+
+        const capitalizeString = newCharArray.join('');
+        return capitalizeString;
+    };
+
+
+module.exports = {stringLength, reverseString, Calculator, capitalize };
 

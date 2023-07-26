@@ -1,4 +1,4 @@
-const {stringLength, reverseString, Calculator} = require('./modules/app');
+const {stringLength, reverseString, Calculator, capitalize} = require('./modules/app');
 
 // string length test 
 describe('string length', () => {
@@ -24,13 +24,6 @@ describe('reverse String', () => {
 });
 
 // Calculator functions testing
-// describe('Calculator', () => {
-//     test('The fuction "Add" should return 15', () => {
-//     //   const result = new Calculator(12, 3);
-//       expect(new Calculator(12,3).add()).toBe(15);
-//     });
-// });
-
 describe('Calculator functions', () => {
     test('The result of the "Add" function should be 15', () => {
         expect(new Calculator(12,3).divide()).toBe(4);
@@ -52,3 +45,11 @@ describe('Calculator functions', () => {
     });
 });
 
+
+// test capitalize function
+
+describe('Capitalie String', () => {
+    test('The first letter of "jawad" should be "Jawad"', () => {
+        expect(capitalize("jawad")).toBe("Jawad")
+    });
+});
